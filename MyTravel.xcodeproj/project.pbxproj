@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A29FEF31EB637E3007EB340 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A29FEF21EB637E3007EB340 /* main.m */; };
+		3A29FEF61EB637E3007EB340 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A29FEF51EB637E3007EB340 /* AppDelegate.m */; };
+		3A29FEFF1EB637E3007EB340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A29FEFD1EB637E3007EB340 /* Main.storyboard */; };
+		3A29FF011EB637E3007EB340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A29FF001EB637E3007EB340 /* Assets.xcassets */; };
+		3A29FF041EB637E3007EB340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A29FF021EB637E3007EB340 /* LaunchScreen.storyboard */; };
+		3A29FF0F1EB637E4007EB340 /* MyTravelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A29FF0E1EB637E4007EB340 /* MyTravelTests.m */; };
+		3A29FF221EB63AE6007EB340 /* SwinjectStoryboard+MyTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A29FF211EB63AE6007EB340 /* SwinjectStoryboard+MyTravel.swift */; };
+		3A29FF241EB63BDE007EB340 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A29FF231EB63BDE007EB340 /* Swinject.framework */; };
+		3A29FF251EB63BDE007EB340 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A29FF231EB63BDE007EB340 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3AB396FA1EB63C96004EA75A /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB396F91EB63C96004EA75A /* SwinjectStoryboard.framework */; };
+		3AB396FB1EB63C96004EA75A /* SwinjectStoryboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB396F91EB63C96004EA75A /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3AB397091EB6511B004EA75A /* TravelGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB397081EB6511B004EA75A /* TravelGateway.swift */; };
+		3AB3970B1EB6512D004EA75A /* SimpleTravelGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB3970A1EB6512D004EA75A /* SimpleTravelGateway.swift */; };
+		3AB3970D1EB651D7004EA75A /* TravelApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB3970C1EB651D7004EA75A /* TravelApiRouter.swift */; };
+		3AB3970F1EB652C6004EA75A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB3970E1EB652C6004EA75A /* Alamofire.framework */; };
+		3AB397101EB652C6004EA75A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB3970E1EB652C6004EA75A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3AB397121EB65BD8004EA75A /* TravelOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB397111EB65BD8004EA75A /* TravelOption.swift */; };
+		3AB397141EB65D23004EA75A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB397131EB65D23004EA75A /* SwiftyJSON.framework */; };
+		3AB397151EB65D23004EA75A /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB397131EB65D23004EA75A /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3AB397171EB65F6C004EA75A /* TravelGatewayDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB397161EB65F6C004EA75A /* TravelGatewayDelegate.swift */; };
+		3AB397191EB66109004EA75A /* ListTravelOptionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB397181EB66109004EA75A /* ListTravelOptionsInteractor.swift */; };
+		3AB3971B1EB6611E004EA75A /* ListTravelOptionsInteractorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB3971A1EB6611E004EA75A /* ListTravelOptionsInteractorDelegate.swift */; };
+		3AB3971D1EB6612C004EA75A /* ListTravelOptionsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB3971C1EB6612C004EA75A /* ListTravelOptionsInteractorProtocol.swift */; };
+		3AB397211EB663AE004EA75A /* ListTrainsTravelOptionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB397201EB663AE004EA75A /* ListTrainsTravelOptionsPresenter.swift */; };
+		3AB3972A1EB677F7004EA75A /* TrainsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB397291EB677F7004EA75A /* TrainsListTableViewController.m */; };
+		3AB397331EB69409004EA75A /* TravelOptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB397311EB69409004EA75A /* TravelOptionTableViewCell.m */; };
+		3AB397341EB69409004EA75A /* TravelOptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB397321EB69409004EA75A /* TravelOptionTableViewCell.xib */; };
+		3AB397361EB6ABEF004EA75A /* ListFlightsTravelOptionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB397351EB6ABEF004EA75A /* ListFlightsTravelOptionsPresenter.swift */; };
+		3AB397381EB6AC30004EA75A /* ListBusesTravelOptionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB397371EB6AC30004EA75A /* ListBusesTravelOptionsPresenter.swift */; };
+		3AB3973B1EB6ACFD004EA75A /* FlightsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB3973A1EB6ACFD004EA75A /* FlightsListTableViewController.m */; };
+		3AB3973E1EB6AD11004EA75A /* BusesListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB3973D1EB6AD11004EA75A /* BusesListTableViewController.m */; };
+		3AB397401EB6B574004EA75A /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB3973F1EB6B574004EA75A /* String+Utils.swift */; };
+		3AB397431EB71471004EA75A /* ListTravelOptionsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB397421EB71471004EA75A /* ListTravelOptionsHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A29FF0B1EB637E4007EB340 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A29FEE61EB637E3007EB340 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A29FEED1EB637E3007EB340;
+			remoteInfo = MyTravel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A29FF261EB63BDF007EB340 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3AB397151EB65D23004EA75A /* SwiftyJSON.framework in Embed Frameworks */,
+				3AB396FB1EB63C96004EA75A /* SwinjectStoryboard.framework in Embed Frameworks */,
+				3AB397101EB652C6004EA75A /* Alamofire.framework in Embed Frameworks */,
+				3A29FF251EB63BDE007EB340 /* Swinject.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3A29FEEE1EB637E3007EB340 /* MyTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A29FEF21EB637E3007EB340 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A29FEF41EB637E3007EB340 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3A29FEF51EB637E3007EB340 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3A29FEFE1EB637E3007EB340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A29FF001EB637E3007EB340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A29FF031EB637E3007EB340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A29FF051EB637E3007EB340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A29FF0A1EB637E4007EB340 /* MyTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A29FF0E1EB637E4007EB340 /* MyTravelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTravelTests.m; sourceTree = "<group>"; };
+		3A29FF101EB637E4007EB340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A29FF201EB63AE5007EB340 /* MyTravel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTravel-Bridging-Header.h"; sourceTree = "<group>"; };
+		3A29FF211EB63AE6007EB340 /* SwinjectStoryboard+MyTravel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+MyTravel.swift"; sourceTree = "<group>"; };
+		3A29FF231EB63BDE007EB340 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		3AB396F91EB63C96004EA75A /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = Carthage/Build/iOS/SwinjectStoryboard.framework; sourceTree = "<group>"; };
+		3AB397081EB6511B004EA75A /* TravelGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelGateway.swift; sourceTree = "<group>"; };
+		3AB3970A1EB6512D004EA75A /* SimpleTravelGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTravelGateway.swift; sourceTree = "<group>"; };
+		3AB3970C1EB651D7004EA75A /* TravelApiRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelApiRouter.swift; sourceTree = "<group>"; };
+		3AB3970E1EB652C6004EA75A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		3AB397111EB65BD8004EA75A /* TravelOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelOption.swift; sourceTree = "<group>"; };
+		3AB397131EB65D23004EA75A /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		3AB397161EB65F6C004EA75A /* TravelGatewayDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelGatewayDelegate.swift; sourceTree = "<group>"; };
+		3AB397181EB66109004EA75A /* ListTravelOptionsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTravelOptionsInteractor.swift; sourceTree = "<group>"; };
+		3AB3971A1EB6611E004EA75A /* ListTravelOptionsInteractorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTravelOptionsInteractorDelegate.swift; sourceTree = "<group>"; };
+		3AB3971C1EB6612C004EA75A /* ListTravelOptionsInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTravelOptionsInteractorProtocol.swift; sourceTree = "<group>"; };
+		3AB397201EB663AE004EA75A /* ListTrainsTravelOptionsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTrainsTravelOptionsPresenter.swift; sourceTree = "<group>"; };
+		3AB397281EB677F7004EA75A /* TrainsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainsListTableViewController.h; sourceTree = "<group>"; };
+		3AB397291EB677F7004EA75A /* TrainsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainsListTableViewController.m; sourceTree = "<group>"; };
+		3AB3972E1EB6871E004EA75A /* ListTravelOptionsPresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTravelOptionsPresenterProtocol.h; sourceTree = "<group>"; };
+		3AB3972F1EB68965004EA75A /* ListTravelOptionsPresenterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTravelOptionsPresenterDelegate.h; sourceTree = "<group>"; };
+		3AB397301EB69409004EA75A /* TravelOptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelOptionTableViewCell.h; sourceTree = "<group>"; };
+		3AB397311EB69409004EA75A /* TravelOptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelOptionTableViewCell.m; sourceTree = "<group>"; };
+		3AB397321EB69409004EA75A /* TravelOptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelOptionTableViewCell.xib; sourceTree = "<group>"; };
+		3AB397351EB6ABEF004EA75A /* ListFlightsTravelOptionsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListFlightsTravelOptionsPresenter.swift; sourceTree = "<group>"; };
+		3AB397371EB6AC30004EA75A /* ListBusesTravelOptionsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBusesTravelOptionsPresenter.swift; sourceTree = "<group>"; };
+		3AB397391EB6ACFD004EA75A /* FlightsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightsListTableViewController.h; sourceTree = "<group>"; };
+		3AB3973A1EB6ACFD004EA75A /* FlightsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightsListTableViewController.m; sourceTree = "<group>"; };
+		3AB3973C1EB6AD11004EA75A /* BusesListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusesListTableViewController.h; sourceTree = "<group>"; };
+		3AB3973D1EB6AD11004EA75A /* BusesListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusesListTableViewController.m; sourceTree = "<group>"; };
+		3AB3973F1EB6B574004EA75A /* String+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		3AB397411EB71471004EA75A /* ListTravelOptionsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTravelOptionsHelper.h; sourceTree = "<group>"; };
+		3AB397421EB71471004EA75A /* ListTravelOptionsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTravelOptionsHelper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A29FEEB1EB637E3007EB340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB397141EB65D23004EA75A /* SwiftyJSON.framework in Frameworks */,
+				3AB396FA1EB63C96004EA75A /* SwinjectStoryboard.framework in Frameworks */,
+				3AB3970F1EB652C6004EA75A /* Alamofire.framework in Frameworks */,
+				3A29FF241EB63BDE007EB340 /* Swinject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A29FF071EB637E4007EB340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A29FEE51EB637E3007EB340 = {
+			isa = PBXGroup;
+			children = (
+				3AB396F71EB63C6F004EA75A /* Frameworks */,
+				3A29FEF01EB637E3007EB340 /* MyTravel */,
+				3A29FF0D1EB637E4007EB340 /* MyTravelTests */,
+				3A29FEEF1EB637E3007EB340 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A29FEEF1EB637E3007EB340 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A29FEEE1EB637E3007EB340 /* MyTravel.app */,
+				3A29FF0A1EB637E4007EB340 /* MyTravelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A29FEF01EB637E3007EB340 /* MyTravel */ = {
+			isa = PBXGroup;
+			children = (
+				3A29FF1F1EB63A62007EB340 /* Utils */,
+				3A29FF1D1EB63860007EB340 /* Scenes */,
+				3A29FF1C1EB63858007EB340 /* Presenters */,
+				3A29FF1B1EB6384F007EB340 /* Entities */,
+				3A29FF1A1EB63847007EB340 /* Interactors */,
+				3A29FF191EB63840007EB340 /* Gateways */,
+				3A29FEF41EB637E3007EB340 /* AppDelegate.h */,
+				3A29FEF51EB637E3007EB340 /* AppDelegate.m */,
+				3A29FF001EB637E3007EB340 /* Assets.xcassets */,
+				3A29FF021EB637E3007EB340 /* LaunchScreen.storyboard */,
+				3A29FF051EB637E3007EB340 /* Info.plist */,
+				3A29FEF11EB637E3007EB340 /* Supporting Files */,
+			);
+			path = MyTravel;
+			sourceTree = "<group>";
+		};
+		3A29FEF11EB637E3007EB340 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A29FEF21EB637E3007EB340 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A29FF0D1EB637E4007EB340 /* MyTravelTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A29FF0E1EB637E4007EB340 /* MyTravelTests.m */,
+				3A29FF101EB637E4007EB340 /* Info.plist */,
+			);
+			path = MyTravelTests;
+			sourceTree = "<group>";
+		};
+		3A29FF191EB63840007EB340 /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				3AB397081EB6511B004EA75A /* TravelGateway.swift */,
+				3AB3970A1EB6512D004EA75A /* SimpleTravelGateway.swift */,
+				3AB3970C1EB651D7004EA75A /* TravelApiRouter.swift */,
+				3AB397161EB65F6C004EA75A /* TravelGatewayDelegate.swift */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		3A29FF1A1EB63847007EB340 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				3AB397181EB66109004EA75A /* ListTravelOptionsInteractor.swift */,
+				3AB3971A1EB6611E004EA75A /* ListTravelOptionsInteractorDelegate.swift */,
+				3AB3971C1EB6612C004EA75A /* ListTravelOptionsInteractorProtocol.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		3A29FF1B1EB6384F007EB340 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3AB397111EB65BD8004EA75A /* TravelOption.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		3A29FF1C1EB63858007EB340 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				3AB397201EB663AE004EA75A /* ListTrainsTravelOptionsPresenter.swift */,
+				3AB3972F1EB68965004EA75A /* ListTravelOptionsPresenterDelegate.h */,
+				3AB3972E1EB6871E004EA75A /* ListTravelOptionsPresenterProtocol.h */,
+				3AB397351EB6ABEF004EA75A /* ListFlightsTravelOptionsPresenter.swift */,
+				3AB397371EB6AC30004EA75A /* ListBusesTravelOptionsPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		3A29FF1D1EB63860007EB340 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3A29FEFD1EB637E3007EB340 /* Main.storyboard */,
+				3AB397281EB677F7004EA75A /* TrainsListTableViewController.h */,
+				3AB397291EB677F7004EA75A /* TrainsListTableViewController.m */,
+				3AB397301EB69409004EA75A /* TravelOptionTableViewCell.h */,
+				3AB397311EB69409004EA75A /* TravelOptionTableViewCell.m */,
+				3AB397321EB69409004EA75A /* TravelOptionTableViewCell.xib */,
+				3AB397391EB6ACFD004EA75A /* FlightsListTableViewController.h */,
+				3AB3973A1EB6ACFD004EA75A /* FlightsListTableViewController.m */,
+				3AB3973C1EB6AD11004EA75A /* BusesListTableViewController.h */,
+				3AB3973D1EB6AD11004EA75A /* BusesListTableViewController.m */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3A29FF1F1EB63A62007EB340 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3A29FF211EB63AE6007EB340 /* SwinjectStoryboard+MyTravel.swift */,
+				3A29FF201EB63AE5007EB340 /* MyTravel-Bridging-Header.h */,
+				3AB3973F1EB6B574004EA75A /* String+Utils.swift */,
+				3AB397411EB71471004EA75A /* ListTravelOptionsHelper.h */,
+				3AB397421EB71471004EA75A /* ListTravelOptionsHelper.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3AB396F71EB63C6F004EA75A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AB396F81EB63C7E004EA75A /* Carthage */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3AB396F81EB63C7E004EA75A /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				3AB397131EB65D23004EA75A /* SwiftyJSON.framework */,
+				3AB3970E1EB652C6004EA75A /* Alamofire.framework */,
+				3AB396F91EB63C96004EA75A /* SwinjectStoryboard.framework */,
+				3A29FF231EB63BDE007EB340 /* Swinject.framework */,
+			);
+			name = Carthage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A29FEED1EB637E3007EB340 /* MyTravel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A29FF131EB637E4007EB340 /* Build configuration list for PBXNativeTarget "MyTravel" */;
+			buildPhases = (
+				3A29FEEA1EB637E3007EB340 /* Sources */,
+				3A29FEEB1EB637E3007EB340 /* Frameworks */,
+				3A29FEEC1EB637E3007EB340 /* Resources */,
+				3A29FF261EB63BDF007EB340 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTravel;
+			productName = MyTravel;
+			productReference = 3A29FEEE1EB637E3007EB340 /* MyTravel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A29FF091EB637E4007EB340 /* MyTravelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A29FF161EB637E4007EB340 /* Build configuration list for PBXNativeTarget "MyTravelTests" */;
+			buildPhases = (
+				3A29FF061EB637E4007EB340 /* Sources */,
+				3A29FF071EB637E4007EB340 /* Frameworks */,
+				3A29FF081EB637E4007EB340 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A29FF0C1EB637E4007EB340 /* PBXTargetDependency */,
+			);
+			name = MyTravelTests;
+			productName = MyTravelTests;
+			productReference = 3A29FF0A1EB637E4007EB340 /* MyTravelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A29FEE61EB637E3007EB340 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Anibal Ferreira";
+				TargetAttributes = {
+					3A29FEED1EB637E3007EB340 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = BSMZK65U43;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					3A29FF091EB637E4007EB340 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = BSMZK65U43;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3A29FEED1EB637E3007EB340;
+					};
+				};
+			};
+			buildConfigurationList = 3A29FEE91EB637E3007EB340 /* Build configuration list for PBXProject "MyTravel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A29FEE51EB637E3007EB340;
+			productRefGroup = 3A29FEEF1EB637E3007EB340 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A29FEED1EB637E3007EB340 /* MyTravel */,
+				3A29FF091EB637E4007EB340 /* MyTravelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A29FEEC1EB637E3007EB340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB397341EB69409004EA75A /* TravelOptionTableViewCell.xib in Resources */,
+				3A29FF041EB637E3007EB340 /* LaunchScreen.storyboard in Resources */,
+				3A29FF011EB637E3007EB340 /* Assets.xcassets in Resources */,
+				3A29FEFF1EB637E3007EB340 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A29FF081EB637E4007EB340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A29FEEA1EB637E3007EB340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB397091EB6511B004EA75A /* TravelGateway.swift in Sources */,
+				3AB3972A1EB677F7004EA75A /* TrainsListTableViewController.m in Sources */,
+				3AB3970D1EB651D7004EA75A /* TravelApiRouter.swift in Sources */,
+				3AB397381EB6AC30004EA75A /* ListBusesTravelOptionsPresenter.swift in Sources */,
+				3AB397431EB71471004EA75A /* ListTravelOptionsHelper.m in Sources */,
+				3AB397401EB6B574004EA75A /* String+Utils.swift in Sources */,
+				3AB397211EB663AE004EA75A /* ListTrainsTravelOptionsPresenter.swift in Sources */,
+				3AB397171EB65F6C004EA75A /* TravelGatewayDelegate.swift in Sources */,
+				3AB3973B1EB6ACFD004EA75A /* FlightsListTableViewController.m in Sources */,
+				3AB397121EB65BD8004EA75A /* TravelOption.swift in Sources */,
+				3AB397331EB69409004EA75A /* TravelOptionTableViewCell.m in Sources */,
+				3AB397361EB6ABEF004EA75A /* ListFlightsTravelOptionsPresenter.swift in Sources */,
+				3A29FEF61EB637E3007EB340 /* AppDelegate.m in Sources */,
+				3AB3971D1EB6612C004EA75A /* ListTravelOptionsInteractorProtocol.swift in Sources */,
+				3A29FEF31EB637E3007EB340 /* main.m in Sources */,
+				3AB3973E1EB6AD11004EA75A /* BusesListTableViewController.m in Sources */,
+				3AB397191EB66109004EA75A /* ListTravelOptionsInteractor.swift in Sources */,
+				3A29FF221EB63AE6007EB340 /* SwinjectStoryboard+MyTravel.swift in Sources */,
+				3AB3970B1EB6512D004EA75A /* SimpleTravelGateway.swift in Sources */,
+				3AB3971B1EB6611E004EA75A /* ListTravelOptionsInteractorDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A29FF061EB637E4007EB340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A29FF0F1EB637E4007EB340 /* MyTravelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A29FF0C1EB637E4007EB340 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A29FEED1EB637E3007EB340 /* MyTravel */;
+			targetProxy = 3A29FF0B1EB637E4007EB340 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A29FEFD1EB637E3007EB340 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A29FEFE1EB637E3007EB340 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		3A29FF021EB637E3007EB340 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A29FF031EB637E3007EB340 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A29FF111EB637E4007EB340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3A29FF121EB637E4007EB340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A29FF141EB637E4007EB340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = BSMZK65U43;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = MyTravel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agbferreira.MyTravel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyTravel/Utils/MyTravel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3A29FF151EB637E4007EB340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = BSMZK65U43;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = MyTravel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agbferreira.MyTravel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyTravel/Utils/MyTravel-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3A29FF171EB637E4007EB340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BSMZK65U43;
+				INFOPLIST_FILE = MyTravelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agbferreira.MyTravelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTravel.app/MyTravel";
+			};
+			name = Debug;
+		};
+		3A29FF181EB637E4007EB340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BSMZK65U43;
+				INFOPLIST_FILE = MyTravelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agbferreira.MyTravelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTravel.app/MyTravel";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A29FEE91EB637E3007EB340 /* Build configuration list for PBXProject "MyTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A29FF111EB637E4007EB340 /* Debug */,
+				3A29FF121EB637E4007EB340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A29FF131EB637E4007EB340 /* Build configuration list for PBXNativeTarget "MyTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A29FF141EB637E4007EB340 /* Debug */,
+				3A29FF151EB637E4007EB340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A29FF161EB637E4007EB340 /* Build configuration list for PBXNativeTarget "MyTravelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A29FF171EB637E4007EB340 /* Debug */,
+				3A29FF181EB637E4007EB340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A29FEE61EB637E3007EB340 /* Project object */;
+}

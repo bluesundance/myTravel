@@ -1,0 +1,4 @@
+github "Swinject/Swinject"
+github "Swinject/SwinjectStoryboard"
+github "Alamofire/Alamofire"
+github "SwiftyJSON/SwiftyJSON"

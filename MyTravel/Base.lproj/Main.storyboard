@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trains List Table View Controller-->
+        <scene sceneID="ao6-Zd-x3m">
+            <objects>
+                <tableViewController id="1au-bB-CRZ" customClass="TrainsListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Tb3-bj-Ifo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="1au-bB-CRZ" id="jk9-qX-l9m"/>
+                            <outlet property="delegate" destination="1au-bB-CRZ" id="4ml-U8-6zX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="W2i-sq-t5x">
+                        <barButtonItem key="rightBarButtonItem" image="sortingArrows" id="k6C-OC-j3Z">
+                            <connections>
+                                <action selector="didTapSortButton:" destination="1au-bB-CRZ" id="PYw-Ad-z9m"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUH-fH-NfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2176.8000000000002" y="-308.09595202398805"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nfJ-7p-ydH" kind="relationship" relationship="viewControllers" id="xQN-bh-19a"/>
+                        <segue destination="MwG-wA-K4G" kind="relationship" relationship="viewControllers" id="Y5i-i2-V6t"/>
+                        <segue destination="DIr-lW-p8s" kind="relationship" relationship="viewControllers" id="kud-oF-Lwv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Flights List Table View Controller-->
+        <scene sceneID="zva-nd-HQP">
+            <objects>
+                <tableViewController id="bc8-H7-V1g" customClass="FlightsListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="vKi-us-Ty1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="bc8-H7-V1g" id="lQa-TA-j9W"/>
+                            <outlet property="delegate" destination="bc8-H7-V1g" id="Chg-Yn-RUZ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="x1G-y4-hU7">
+                        <barButtonItem key="rightBarButtonItem" image="sortingArrows" id="Tar-bf-Cfk">
+                            <connections>
+                                <action selector="didTapSortButton:" destination="bc8-H7-V1g" id="Vqp-Va-Gba"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N9P-gq-ZtH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4855.1999999999998" y="134.48275862068968"/>
+        </scene>
+        <!--Buses List Table View Controller-->
+        <scene sceneID="J7g-Vh-IXe">
+            <objects>
+                <tableViewController id="uah-65-uH1" customClass="BusesListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="sMD-01-NjN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="uah-65-uH1" id="CIZ-ZC-GRD"/>
+                            <outlet property="delegate" destination="uah-65-uH1" id="Lom-Nh-PTF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="DZw-K9-3jx">
+                        <barButtonItem key="rightBarButtonItem" image="sortingArrows" id="hrn-as-hwk">
+                            <connections>
+                                <action selector="didTapSortingButton:" destination="uah-65-uH1" id="Inw-1L-BCu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZWt-XN-1l2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2176.8000000000002" y="751.57421289355329"/>
+        </scene>
+        <!--Train-->
+        <scene sceneID="qtd-Yl-tbs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nfJ-7p-ydH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Train" image="first" id="OzZ-ue-95C"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pyI-sQ-PzG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1au-bB-CRZ" kind="relationship" relationship="rootViewController" id="Yvl-7C-rcH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uon-ZX-Zhu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1237.5999999999999" y="-308.09595202398805"/>
+        </scene>
+        <!--Flight-->
+        <scene sceneID="lAo-Jp-vlt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MwG-wA-K4G" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Flight" image="first" id="Iyf-59-yBI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZQr-tc-w26">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bc8-H7-V1g" kind="relationship" relationship="rootViewController" id="5VK-63-KWW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lIL-fl-jKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3916" y="134.48275862068968"/>
+        </scene>
+        <!--Bus-->
+        <scene sceneID="m2L-vV-pDe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DIr-lW-p8s" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bus" image="first" id="2OC-j1-FtV"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EkH-Tu-bef">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uah-65-uH1" kind="relationship" relationship="rootViewController" id="eP3-z8-VGv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pcZ-Ja-PCP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1237.5999999999999" y="751.57421289355329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="sortingArrows" width="25" height="25"/>
+    </resources>
+</document>
